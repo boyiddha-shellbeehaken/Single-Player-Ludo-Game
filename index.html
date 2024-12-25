@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Player Ludo Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-image">
+    <marquee behavior="scroll" direction="left">
+      <h1>Single Player Ludo Game</h1>
+    </marquee>
+
+    <div>
+      <button id="start-game">Start Game</button>
+    </div>
+
+    <div class="container">
+      <div id="ludo-board" class="ludo-board">
+        <div class="overlay" id="overlay"></div>
+        <div class="message-box" id="message-box">
+          <p id="result-message"></p>
+          <button id="restart-game">Continue--Game</button>
+        </div>
+      </div>
+
+      <div class="info">
+        <div>
+          <span class="score-board">Score-Board</span>
+          <div>Target Score: <span id="target-score">0</span></div>
+          <div>Current Score: <span id="current-score">0</span></div>
+          <div>Current Level: <span id="current-level">0</span></div>
+        </div>
+        <div>Attempt Left: <span id="attempts-left">0</span></div>
+        <div>Highest Level: <span id="highest-level"></span></div>
+      </div>
+    </div>
+
+    <div class="dice">
+      <div class="dice-display" id="dice-display">--</div>
+      <button id="roll-dice">
+        <i class="fa fa-spinner fa-spin"></i> Roll Dice
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
